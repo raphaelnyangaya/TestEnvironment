@@ -1,0 +1,838 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "8bef79c794009d84db62",
+      "config": "{}",
+      "name": "54748320a0163a7186b5"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Averages",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "59f2fa80612b0c4892a5",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1435dc012446212d42d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":431.07287792135077,\"z\":14000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Classification\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Classification\"},\"Name\":\"Human Resources.Job Classification\",\"NativeReferenceName\":\"Job Classification\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 431.07,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"1c6dfb1605000318e209\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.0164795796513,\"y\":20.17673752089802,\"z\":5000,\"width\":763.0475280630524,\"height\":106.38643420109864,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"HUMAN RESOURCE ANALYSIS 2024\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}]},{\"textRuns\":[{\"value\":\"          By Averages\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 106.39,
+          "width": 763.05,
+          "x": 33.02,
+          "y": 20.18,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"1e6624617498150e4eda\",\"layouts\":[{\"id\":0,\"position\":{\"x\":453.3538801506637,\"y\":157.75377578086974,\"z\":12000,\"width\":152.24265583950321,\"height\":119.22617625985193,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 152.24,
+          "x": 453.35,
+          "y": 157.75,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"202822c42ba521a70d6b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":293.47981848578934,\"y\":579.622641509434,\"z\":19000,\"width\":946.4724146166707,\"height\":469.567709577263,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true},{\"queryRef\":\"Human Resources.Job Classification\",\"active\":true},{\"queryRef\":\"Human Resources.Emp.Type\",\"active\":true},{\"queryRef\":\"Human Resources.Departmets\"}],\"Values\":[{\"queryRef\":\"All Measures.Average Balance Days\"},{\"queryRef\":\"All Measures.Average Salary\"},{\"queryRef\":\"All Measures.Total Balance Days\"},{\"queryRef\":\"All Measures.Total Salary Cost\"},{\"queryRef\":\"All Measures.Average Sick Days\"},{\"queryRef\":\"All Measures.Total Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Departmets\"},\"Name\":\"Human Resources.Departmets\",\"NativeReferenceName\":\"Departmets\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Classification\"},\"Name\":\"Human Resources.Job Classification\",\"NativeReferenceName\":\"Job Classification\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Emp.Type\"},\"Name\":\"Human Resources.Emp.Type\",\"NativeReferenceName\":\"Emp.Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"},\"Name\":\"All Measures.Average Salary\",\"NativeReferenceName\":\"Average Salary\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"},\"Name\":\"All Measures.Total Salary Cost\",\"NativeReferenceName\":\"Total Salary Cost\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Classification\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Human Resources.Gender\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Human Resources\"}},\"Property\":\"Gender\"}}],\"isPinned\":true},{\"queryRefs\":[\"Human Resources.Job Classification\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Human Resources\"}},\"Property\":\"Job Classification\"}}],\"isPinned\":true},{\"queryRefs\":[\"Human Resources.Emp.Type\"],\"isCollapsed\":true,\"isPinned\":true},{\"queryRefs\":[\"Human Resources.Departmets\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Human Resources\"}},\"Property\":\"Departmets\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Female'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Other'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Blue Collar'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'White Collar'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Male'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Other'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Blue Collar'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'White Collar'\"}}],\"isToggled\":true}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"224.21871329718232D\"}}}},\"selector\":{\"metadata\":\"Human Resources.Gender\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"134.68280702111832D\"}}}},\"selector\":{\"metadata\":\"All Measures.Average Sick Days\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 469.57,
+          "width": 946.47,
+          "x": 293.48,
+          "y": 579.62,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"205428c6b5b4003c8387\",\"layouts\":[{\"id\":0,\"position\":{\"x\":817.457573426257,\"y\":20.390098203376027,\"z\":9000,\"width\":189.07181970403224,\"height\":92.68226456080012,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Now showing \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\":\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 92.68,
+          "width": 189.07,
+          "x": 817.46,
+          "y": 20.39,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"22eb7b4d24de410c4607\",\"layouts\":[{\"id\":0,\"position\":{\"x\":229.5755185552493,\"y\":157.75377578086974,\"z\":11000,\"width\":194.43037974683546,\"height\":119.22617625985193,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Salary\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"},\"Name\":\"All Measures.Average Salary\",\"NativeReferenceName\":\"Average Salary\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 194.43,
+          "x": 229.58,
+          "y": 157.75,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"24242faea71eb316d763\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1316.9906854549797,\"y\":828.6897922139958,\"z\":25000,\"width\":278.8058275614999,\"height\":200,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Marital Status\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Marital Status\"},\"Name\":\"Human Resources.Marital Status\",\"NativeReferenceName\":\"Marital Status\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY MARITAL STATUS'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 278.81,
+          "x": 1316.99,
+          "y": 828.69,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"3619d3d3a49554095a1a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":146.73990924289467,\"z\":1000,\"width\":1900.2818246954862,\"height\":139.40291378074994,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 139.40,
+          "width": 1900.28,
+          "x": 14.67,
+          "y": 146.74,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"44097e63b29d221b1834\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1315.1564365894435,\"y\":575.9541437783616,\"z\":22000,\"width\":278.8058275614999,\"height\":200,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Years in current role\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Years in current role\"},\"Name\":\"Human Resources.Years in current role\",\"NativeReferenceName\":\"Years in current role\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY YEARS IN CURRENT ROLE'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 278.81,
+          "x": 1315.16,
+          "y": 575.95,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"49769355260ed094cb06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":627.2999504016248,\"z\":16000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Satisfaction\"},\"Name\":\"Human Resources.Job Satisfaction\",\"NativeReferenceName\":\"Job Satisfaction\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 627.30,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"4be5f7152aa097590115\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1227.1131827849936,\"y\":161.2671403357922,\"z\":7000,\"width\":632.0930443046568,\"height\":103.80413630809613,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Business Unit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Business Unit\"},\"Name\":\"Human Resources.Business Unit\",\"NativeReferenceName\":\"Business Unit\"}]},\"syncGroup\":{\"groupName\":\"Business Unit\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 103.80,
+          "width": 632.09,
+          "x": 1227.11,
+          "y": 161.27,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"4f470a300a40be2ade27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":315.4908048722236,\"z\":4000,\"width\":232.9496059230953,\"height\":752.0420348698352,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 752.04,
+          "width": 232.95,
+          "x": 14.67,
+          "y": 315.49,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5482032f508a46b6da99\",\"layouts\":[{\"id\":0,\"position\":{\"x\":275.1373298304275,\"y\":315.4908048722236,\"z\":3000,\"width\":986.8258896584667,\"height\":752.0420348698352,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 752.04,
+          "width": 986.83,
+          "x": 275.14,
+          "y": 315.49,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"561e37251eab95b61509\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1223.4058922025615,\"y\":20.390098203376027,\"z\":6000,\"width\":617.2638819749287,\"height\":83.4140381047201,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Avg Metric.Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Avg Metric\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Type\"},\"Name\":\"Avg Metric.Type\",\"NativeReferenceName\":\"Type\"}]},\"syncGroup\":{\"groupName\":\"Type\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 83.41,
+          "width": 617.26,
+          "x": 1223.41,
+          "y": 20.39,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"789af8802800038c8259\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":9.171244327680917,\"z\":0,\"width\":1900.2818246954862,\"height\":130.23166945306903,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 130.23,
+          "width": 1900.28,
+          "x": 14.67,
+          "y": 9.17,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7cd6d6494adebdc80db1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.1686654296964,\"y\":326.24157125401643,\"z\":26000,\"width\":468.9722586776486,\"height\":213.16920848984026,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Average Sick Days\"},{\"queryRef\":\"All Measures.Average Balance Days\"}],\"Category\":[{\"queryRef\":\"Human Resources.Business Unit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Business Unit\"},\"Name\":\"Human Resources.Business Unit\",\"NativeReferenceName\":\"Business Unit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 213.17,
+          "width": 468.97,
+          "x": 289.17,
+          "y": 326.24,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"804123bc01aebe787080\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1006.5293931302892,\"y\":33.365615241888044,\"z\":8000,\"width\":216.87649907227228,\"height\":61.170294610128074,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.AvgMeasureSelected\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureSelected\"},\"Name\":\"All Measures.AvgMeasureSelected\",\"NativeReferenceName\":\"AvgMeasureSelected\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.17,
+          "width": 216.88,
+          "x": 1006.53,
+          "y": 33.37,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"8dc48060a641728e628d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1293.1454502030094,\"y\":315.4908048722236,\"z\":2000,\"width\":621.8103654167662,\"height\":752.0420348698352,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 752.04,
+          "width": 621.81,
+          "x": 1293.15,
+          "y": 315.49,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a22bcdc20a525a380b7c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.68373608279631,\"y\":800.7482912448559,\"z\":18000,\"width\":199.6576157054557,\"height\":74.09973366388047,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Marital Status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Marital Status\"},\"Name\":\"Human Resources.Marital Status\",\"NativeReferenceName\":\"Marital Status\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 199.66,
+          "x": 33.68,
+          "y": 800.75,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"a929a8d9aeb6cc3c9d5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1610.5771213765943,\"y\":561.6545232384487,\"z\":23000,\"width\":280,\"height\":200,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Years since last promition\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Years since last promition\"},\"Name\":\"Human Resources.Years since last promition\",\"NativeReferenceName\":\"Years since last promition\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY LAST PROMOTION'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 280.00,
+          "x": 1610.58,
+          "y": 561.65,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"b990b3890484a4921495\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":336.38988490639224,\"z\":13000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 336.39,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"b9a72f212d0000e2a842\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":528.5003055164522,\"z\":15000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Relationship Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Relationship Satisfaction\"},\"Name\":\"Human Resources.Relationship Satisfaction\",\"NativeReferenceName\":\"Relationship Satisfaction\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 528.50,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"bc8f27fa44238730ec52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":712.37742238608,\"z\":17000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Type\"},\"Name\":\"Human Resources.Job Type\",\"NativeReferenceName\":\"Job Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 712.38,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"be54d51c9d2020cc19c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1614.1390016718415,\"y\":830.524041079532,\"z\":24000,\"width\":280.6400764270361,\"height\":200,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY GENDER'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 280.64,
+          "x": 1614.14,
+          "y": 830.52,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"da453300e5bd0ce5eda4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1313.3221877239073,\"y\":326.49629806544067,\"z\":20000,\"width\":280,\"height\":200,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Education\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Education\"},\"Name\":\"Human Resources.Education\",\"NativeReferenceName\":\"Education\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY EDUCATION'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 280.00,
+          "x": 1313.32,
+          "y": 326.50,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"ddb001cda81030b6909b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.984880867167114,\"y\":157.75377578086974,\"z\":10000,\"width\":166.9166467637927,\"height\":119.22617625985193,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Balance Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 166.92,
+          "x": 47.98,
+          "y": 157.75,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"ddf00f4ed98108a48c17\",\"layouts\":[{\"id\":0,\"position\":{\"x\":771.1164411458569,\"y\":326.24157125401643,\"z\":27000,\"width\":468.9722586776486,\"height\":213.16920848984026,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Average Balance Days\"},{\"queryRef\":\"All Measures.Average Sick Days\"}],\"Category\":[{\"queryRef\":\"Human Resources.Departmets\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Departmets\"},\"Name\":\"Human Resources.Departmets\",\"NativeReferenceName\":\"Departmets\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 213.17,
+          "width": 468.97,
+          "x": 771.12,
+          "y": 326.24,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"e478a85650568c044088\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1611.2392611754535,\"y\":326.4978183908353,\"z\":21000,\"width\":280,\"height\":200,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Emp.Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.AvgMeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Emp.Type\"},\"Name\":\"Human Resources.Emp.Type\",\"NativeReferenceName\":\"Emp.Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"},\"Name\":\"All Measures.AvgMeasureLogic\",\"NativeReferenceName\":\"AvgMeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AvgMeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY EMPLOYEE TYPE'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 280.00,
+          "x": 1611.24,
+          "y": 326.50,
+          "z": 21000.00
+        }
+      ],
+      "width": 1920.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Business Units|Region",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "81bfce5cccaaa2888e06",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"034d3286033a4d55273b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.660138524003,\"y\":183.10696498560924,\"z\":22000,\"width\":166.9166467637927,\"height\":119.22617625985193,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Balance Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 166.92,
+          "x": 988.66,
+          "y": 183.11,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"31aeb1942102b0022205\",\"layouts\":[{\"id\":0,\"position\":{\"x\":820.130441166403,\"y\":183.58613531020623,\"z\":18000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"AllMeasures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 820.13,
+          "y": 183.59,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"33f4566f5306d2b684bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":330.16479579651303,\"z\":0,\"width\":243.9550991163124,\"height\":735.5337950800096,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 735.53,
+          "width": 243.96,
+          "x": 14.67,
+          "y": 330.16,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3d3d50b19224a0dc584e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1401.3658732396655,\"y\":433.1917438554867,\"z\":9000,\"width\":469.567709577263,\"height\":251.29209457845712,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Total Sick Days\"},{\"queryRef\":\"All Measures.Total Balance Days\"}],\"Category\":[{\"queryRef\":\"Dimension Table.Value\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dimension Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Value\"},\"Name\":\"Dimension Table.Value\",\"NativeReferenceName\":\"Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.29,
+          "width": 469.57,
+          "x": 1401.37,
+          "y": 433.19,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"3efa68caeb07ea23ac81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1172.0850250776211,\"y\":183.10696498560924,\"z\":23000,\"width\":194.43037974683546,\"height\":119.22617625985193,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Salary\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"},\"Name\":\"All Measures.Average Salary\",\"NativeReferenceName\":\"Average Salary\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 194.43,
+          "x": 1172.09,
+          "y": 183.11,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"45fb09b13021077b907e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":214.3016776420405,\"y\":182.5820713474176,\"z\":15000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Salary Cost\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"},\"Name\":\"AllMeasures.Total Salary Cost\",\"NativeReferenceName\":\"Total Salary Cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 214.30,
+          "y": 182.58,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"48b3bd8558030e703374\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.574185248325925,\"y\":455.5201675551527,\"z\":7000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Classification\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Classification\"},\"Name\":\"Human Resources.Job Classification\",\"NativeReferenceName\":\"Job Classification\"}]},\"syncGroup\":{\"groupName\":\"Job Classification\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 29.57,
+          "y": 455.52,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"494127e6a365a20c1ed6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.0164795796513,\"y\":662.1638404585623,\"z\":26000,\"width\":198.09887747790782,\"height\":75.20420348698352,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Satisfaction\"},\"Name\":\"Human Resources.Job Satisfaction\",\"NativeReferenceName\":\"Job Satisfaction\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.20,
+          "width": 198.10,
+          "x": 33.02,
+          "y": 662.16,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"4a3871773db268625552\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614.2978476556239,\"y\":183.58613531020623,\"z\":17000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Active Employees\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Active Employees\"},\"Name\":\"AllMeasures.Total Active Employees\",\"NativeReferenceName\":\"Total Active Employees\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Active Employees\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 614.30,
+          "y": 183.59,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"4ec67f48540e3795d887\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.850728445187485,\"y\":768.5502746596609,\"z\":27000,\"width\":198.09887747790782,\"height\":73.36995462144733,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Type\"},\"Name\":\"Human Resources.Job Type\",\"NativeReferenceName\":\"Job Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.37,
+          "width": 198.10,
+          "x": 34.85,
+          "y": 768.55,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"50718eeec75060389d55\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.168995352554866,\"y\":182.5820713474176,\"z\":14000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Employess\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Employess\"},\"Name\":\"AllMeasures.Total Employess\",\"NativeReferenceName\":\"Total Employess\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Employess\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 33.17,
+          "y": 182.58,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"769842ffe7b6dd4e6057\",\"layouts\":[{\"id\":0,\"position\":{\"x\":829.0804872223549,\"y\":432.8827322665393,\"z\":10000,\"width\":515.4239312156676,\"height\":251.29209457845712,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Total Sick Days\"},{\"queryRef\":\"All Measures.Total Balance Days\"}],\"Category\":[{\"queryRef\":\"Dimension Table.Value\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dimension Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Value\"},\"Name\":\"Dimension Table.Value\",\"NativeReferenceName\":\"Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.29,
+          "width": 515.42,
+          "x": 829.08,
+          "y": 432.88,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"77711b8409c30ac5d825\",\"layouts\":[{\"id\":0,\"position\":{\"x\":352.1757821829472,\"y\":427.37998566993076,\"z\":25000,\"width\":414.54024361117746,\"height\":251.29209457845712,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dimension Table.Value\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dimension Table\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Value\"},\"Name\":\"Dimension Table.Value\",\"NativeReferenceName\":\"Value\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY EDUCATION'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.29,
+          "width": 414.54,
+          "x": 352.18,
+          "y": 427.38,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"82132ba2111b640768d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1208.237323908273,\"y\":20.583259351077906,\"z\":5000,\"width\":631.9060620780917,\"height\":82.33303740431163,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Avg Metric.Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Avg Metric\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Type\"},\"Name\":\"Avg Metric.Type\",\"NativeReferenceName\":\"Type\"}]},\"display\":{\"mode\":\"hidden\"},\"syncGroup\":{\"groupName\":\"Type\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.33,
+          "width": 631.91,
+          "x": 1208.24,
+          "y": 20.58,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"84bcd78fcaa2b1e40c70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1406.8688798662527,\"y\":183.10696498560924,\"z\":24000,\"width\":152.24265583950321,\"height\":119.22617625985193,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.Average Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 152.24,
+          "x": 1406.87,
+          "y": 183.11,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"8d982a5446526bb2023a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.7654645330786,\"y\":34.850728445187485,\"z\":12000,\"width\":209.1043706711249,\"height\":78.8727012180559,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Now showing  \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\":\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 78.87,
+          "width": 209.10,
+          "x": 865.77,
+          "y": 34.85,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"8fec755d031cea935031\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.182230714115118,\"y\":561.2801528540722,\"z\":8000,\"width\":199.933126343444,\"height\":75.20420348698352,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Relationship Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Relationship Satisfaction\"},\"Name\":\"Human Resources.Relationship Satisfaction\",\"NativeReferenceName\":\"Relationship Satisfaction\"}]},\"syncGroup\":{\"groupName\":\"Relationship Satisfaction\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.20,
+          "width": 199.93,
+          "x": 31.18,
+          "y": 561.28,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"92c1f0cdd2db14064705\",\"layouts\":[{\"id\":0,\"position\":{\"x\":23.845235251970387,\"y\":34.850728445187485,\"z\":4000,\"width\":796.0640076427036,\"height\":97.21518987341773,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"HUMAN RESOURCE ANALYSIS 2024\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}]},{\"textRuns\":[{\"value\":\"                  By Business Units and Region\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.22,
+          "width": 796.06,
+          "x": 23.85,
+          "y": 34.85,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"99c3368dc806bba9847c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1058.361595414378,\"y\":34.850728445187485,\"z\":11000,\"width\":148.57415810843085,\"height\":78.8727012180559,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.MeasureSelected\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureSelected\"},\"Name\":\"All Measures.MeasureSelected\",\"NativeReferenceName\":\"MeasureSelected\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.87,
+          "width": 148.57,
+          "x": 1058.36,
+          "y": 34.85,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"afca43c9433c105575d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.182230714115118,\"y\":350.34153331741106,\"z\":6000,\"width\":199.933126343444,\"height\":75.20420348698352,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"}]},\"syncGroup\":{\"groupName\":\"Gender\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.20,
+          "width": 199.93,
+          "x": 31.18,
+          "y": 350.34,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"b429c0ff472668bd64a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":172.41939336040124,\"z\":2000,\"width\":1881.9393360401243,\"height\":139.40291378074994,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 139.40,
+          "width": 1881.94,
+          "x": 14.67,
+          "y": 172.42,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"bc63a5aa69db423b827c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.347981848578936,\"y\":889.610699785049,\"z\":13000,\"width\":199.933126343444,\"height\":73.36995462144733,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Marital Status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Marital Status\"},\"Name\":\"Human Resources.Marital Status\",\"NativeReferenceName\":\"Marital Status\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 73.37,
+          "width": 199.93,
+          "x": 29.35,
+          "y": 889.61,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"bfdd6457b9e4bcabb5a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300.81681394793407,\"y\":330.16479579651303,\"z\":1000,\"width\":1595.7965130164796,\"height\":735.5337950800096,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 735.53,
+          "width": 1595.80,
+          "x": 300.82,
+          "y": 330.16,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c5b0b3f72eaa50e07b81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":20.17673752089802,\"z\":3000,\"width\":1881.9393360401243,\"height\":119.22617625985193,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 119.23,
+          "width": 1881.94,
+          "x": 14.67,
+          "y": 20.18,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c67de14ede240ae3a8c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1223.4439933126343,\"y\":25.67948411750657,\"z\":19000,\"width\":618.1418676856938,\"height\":84.37544781466444,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Metric.Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Metric\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Type\"},\"Name\":\"Metric.Type\",\"NativeReferenceName\":\"Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.38,
+          "width": 618.14,
+          "x": 1223.44,
+          "y": 25.68,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"cbb77ec0bba7ee574b70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":409.1565328322447,\"y\":182.5820713474176,\"z\":16000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Balance Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"AllMeasures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 409.16,
+          "y": 182.58,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"e30263e3520062a051bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":313.65655600668737,\"y\":726.3625507523286,\"z\":21000,\"width\":1581.1225220921901,\"height\":324.66204919990446,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Dimension Table.Value\",\"active\":true}],\"Values\":[{\"queryRef\":\"All Measures.Total Balance Days\"},{\"queryRef\":\"All Measures.Average Balance Days\"},{\"queryRef\":\"All Measures.Total Employess\"},{\"queryRef\":\"All Measures.Total Active Employees\"},{\"queryRef\":\"All Measures.Average Salary\"},{\"queryRef\":\"All Measures.Total Salary Cost\"},{\"queryRef\":\"All Measures.Average Sick Days\"},{\"queryRef\":\"All Measures.Total Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dimension Table\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Value\"},\"Name\":\"Dimension Table.Value\",\"NativeReferenceName\":\"Value\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Balance Days\"},\"Name\":\"All Measures.Average Balance Days\",\"NativeReferenceName\":\"Average Balance Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Employess\"},\"Name\":\"All Measures.Total Employess\",\"NativeReferenceName\":\"Total Employess\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Active Employees\"},\"Name\":\"All Measures.Total Active Employees\",\"NativeReferenceName\":\"Total Active Employees\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Salary\"},\"Name\":\"All Measures.Average Salary\",\"NativeReferenceName\":\"Average Salary\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"},\"Name\":\"All Measures.Total Salary Cost\",\"NativeReferenceName\":\"Total Salary Cost\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Average Sick Days\"},\"Name\":\"All Measures.Average Sick Days\",\"NativeReferenceName\":\"Average Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Value\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"178.37544195269808D\"}}}},\"selector\":{\"metadata\":\"Dimension Table.Value\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"195.02746963306583D\"}}}},\"selector\":{\"metadata\":\"All Measures.Average Balance Days\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"174.70145689037497D\"}}}},\"selector\":{\"metadata\":\"All Measures.Total Employess\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"158.57011812344257D\"}}}},\"selector\":{\"metadata\":\"All Measures.Average Salary\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"183.20420251251753D\"}}}},\"selector\":{\"metadata\":\"All Measures.Total Salary Cost\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"163.79190387887232D\"}}}},\"selector\":{\"metadata\":\"All Measures.Average Sick Days\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"193.3809963967749D\"}}}},\"selector\":{\"metadata\":\"All Measures.Total Sick Days\"}}]}}}",
+          "filters": "[]",
+          "height": 324.66,
+          "width": 1581.12,
+          "x": 313.66,
+          "y": 726.36,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"f9265493e0658d7bbe84\",\"layouts\":[{\"id\":0,\"position\":{\"x\":335.66754239312155,\"y\":337.50179125865776,\"z\":20000,\"width\":1535.2663004537856,\"height\":71.53570575591115,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dimension Table.Dimensions\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dimension Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Dimensions\"},\"Name\":\"Dimension Table.Dimensions\",\"NativeReferenceName\":\"Dimensions\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 71.54,
+          "width": 1535.27,
+          "x": 335.67,
+          "y": 337.50,
+          "z": 20000.00
+        }
+      ],
+      "width": 1920.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"type\":1}",
+      "displayName": "Salary and Employees",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "8bef79c794009d84db62",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"09e4ba4430480c81bc21\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1454.5593503701934,\"y\":636.6230421810212,\"z\":20000,\"width\":456.7279675185097,\"height\":265.9660855027466,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Total Sick Days\"},{\"queryRef\":\"All Measures.Total Balance Days\"}],\"Category\":[{\"queryRef\":\"Human Resources.Departmets\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Departmets\"},\"Name\":\"Human Resources.Departmets\",\"NativeReferenceName\":\"Departmets\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 265.97,
+          "width": 456.73,
+          "x": 1454.56,
+          "y": 636.62,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"114dafa80e249884ab58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":350.3462950959575,\"y\":658.5713676576823,\"z\":16000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Marital Status\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Marital Status\"},\"Name\":\"Human Resources.Marital Status\",\"NativeReferenceName\":\"Marital Status\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY MARITAL STATUS'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 350.35,
+          "y": 658.57,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"1804e82506e054836206\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":431.07287792135077,\"z\":8000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Classification\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Classification\"},\"Name\":\"Human Resources.Job Classification\",\"NativeReferenceName\":\"Job Classification\"}]},\"syncGroup\":{\"groupName\":\"Job Classification\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 431.07,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"197023ce1b334a01d9a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.0164795796513,\"y\":5.50274659660855,\"z\":5000,\"width\":904.2846907093384,\"height\":110.054931932171,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"HUMAN RESOURCE ANALYSIS 2024\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}]},{\"textRuns\":[{\"value\":\"                 By Salary and Employees\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\",\"color\":\"#e66c37\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 110.05,
+          "width": 904.28,
+          "x": 33.02,
+          "y": 5.50,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"2643c2dd066124aecb37\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.7654645330786,\"y\":20.17673752089802,\"z\":22000,\"width\":209.1043706711249,\"height\":69.70145689037497,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Now showing  \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\":\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 69.70,
+          "width": 209.10,
+          "x": 865.77,
+          "y": 20.18,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"264eabaf5c2e6e41ab3d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":336.38988490639224,\"z\":7000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"}]},\"syncGroup\":{\"groupName\":\"Gender\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 336.39,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"2915197061c7967aadc2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1042.040098345268,\"y\":372,\"z\":15000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Emp.Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Emp.Type\"},\"Name\":\"Human Resources.Emp.Type\",\"NativeReferenceName\":\"Emp.Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY EMPLOYEE TYPE'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 1042.04,
+          "y": 372.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"2c03d69430ad1551dbb2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":627.2999504016248,\"z\":10000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Satisfaction\"},\"Name\":\"Human Resources.Job Satisfaction\",\"NativeReferenceName\":\"Job Satisfaction\"}]},\"syncGroup\":{\"groupName\":\"Job Classification1\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 627.30,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"37cd5c1f20160236ca64\",\"layouts\":[{\"id\":0,\"position\":{\"x\":309.988058275615,\"y\":322.8278003343683,\"z\":3000,\"width\":1082.2068306663482,\"height\":601.6336278958681,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 601.63,
+          "width": 1082.21,
+          "x": 309.99,
+          "y": 322.83,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"3d2122d22b1d5abbe205\",\"layouts\":[{\"id\":0,\"position\":{\"x\":636.052329784817,\"y\":161.48996877651575,\"z\":27000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Active Employees\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Active Employees\"},\"Name\":\"AllMeasures.Total Active Employees\",\"NativeReferenceName\":\"Total Active Employees\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Active Employees\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 636.05,
+          "y": 161.49,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"454c93d5489d4392730e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":841.8849232955961,\"y\":161.48996877651575,\"z\":28000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Sick Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"AllMeasures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 841.88,
+          "y": 161.49,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"54cbdf0f0dcce539cdd9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1441.7196083114402,\"y\":322.8278003343683,\"z\":2000,\"width\":469.567709577263,\"height\":601.6336278958681,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 601.63,
+          "width": 469.57,
+          "x": 1441.72,
+          "y": 322.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5af5966c910040de0943\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336.03430260329594,\"y\":372.55699425451013,\"z\":13000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Gender\"},\"Name\":\"Human Resources.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY GENDER'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 336.03,
+          "y": 372.56,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"5e3318dfeb2db3744e0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1208.237323908273,\"y\":20.583259351077906,\"z\":6000,\"width\":631.9060620780917,\"height\":82.33303740431163,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Avg Metric.Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Avg Metric\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Type\"},\"Name\":\"Avg Metric.Type\",\"NativeReferenceName\":\"Type\"}]},\"display\":{\"mode\":\"hidden\"},\"syncGroup\":{\"groupName\":\"Type\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.33,
+          "width": 631.91,
+          "x": 1208.24,
+          "y": 20.58,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"604782d90dc7d2eb7ceb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":412.3809115031035,\"y\":161.48996877651575,\"z\":26000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Balance Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"AllMeasures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 412.38,
+          "y": 161.49,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"625970600a1046a12bd6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1454.5593503701934,\"y\":346.8117214263045,\"z\":19000,\"width\":456.7279675185097,\"height\":251.29209457845712,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"All Measures.Total Sick Days\"},{\"queryRef\":\"All Measures.Total Balance Days\"}],\"Category\":[{\"queryRef\":\"Human Resources.Business Unit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"},\"Name\":\"All Measures.Total Sick Days\",\"NativeReferenceName\":\"Total Sick Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Balance Days\"},\"Name\":\"All Measures.Total Balance Days\",\"NativeReferenceName\":\"Total Balance Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Business Unit\"},\"Name\":\"Human Resources.Business Unit\",\"NativeReferenceName\":\"Business Unit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Sick Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.29,
+          "width": 456.73,
+          "x": 1454.56,
+          "y": 346.81,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"71376ccfa805c6403d78\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":712.37742238608,\"z\":11000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Job Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Job Type\"},\"Name\":\"Human Resources.Job Type\",\"NativeReferenceName\":\"Job Type\"}]},\"syncGroup\":{\"groupName\":\"Job Type\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 712.38,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"7545b5d391aab0e025b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.68373608279631,\"y\":800.7482912448559,\"z\":23000,\"width\":199.6576157054557,\"height\":74.09973366388047,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Marital Status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Marital Status\"},\"Name\":\"Human Resources.Marital Status\",\"NativeReferenceName\":\"Marital Status\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 199.66,
+          "x": 33.68,
+          "y": 800.75,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"75b897f3ce285eac9a88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704.3783559344972,\"y\":658.4987868774348,\"z\":17000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Years in current role\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Years in current role\"},\"Name\":\"Human Resources.Years in current role\",\"NativeReferenceName\":\"Years in current role\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY YEARS IN CURRENT ROLE'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 704.38,
+          "y": 658.50,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"773cd1aa011cc42d3cc0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":322.8278003343683,\"z\":4000,\"width\":232.9496059230953,\"height\":601.6336278958681,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 601.63,
+          "width": 232.95,
+          "x": 14.67,
+          "y": 322.83,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"84925074117c4ccb5600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":217.52605631289927,\"y\":161.48996877651575,\"z\":25000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Salary Cost\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"},\"Name\":\"AllMeasures.Total Salary Cost\",\"NativeReferenceName\":\"Total Salary Cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Salary Cost\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 217.53,
+          "y": 161.49,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"974859b181e7de30d463\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.821008063899676,\"y\":528.5003055164522,\"z\":9000,\"width\":198.97150706041978,\"height\":74.09973366388047,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Relationship Satisfaction\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Relationship Satisfaction\"},\"Name\":\"Human Resources.Relationship Satisfaction\",\"NativeReferenceName\":\"Relationship Satisfaction\"}]},\"syncGroup\":{\"groupName\":\"Relationship Satisfaction\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.10,
+          "width": 198.97,
+          "x": 33.82,
+          "y": 528.50,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"98ebd9d7edbe5e34b726\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1214.2727489849535,\"y\":23.845235251970387,\"z\":29000,\"width\":630.9816097444472,\"height\":84.37544781466444,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Metric.Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Metric\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Type\"},\"Name\":\"Metric.Type\",\"NativeReferenceName\":\"Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.38,
+          "width": 630.98,
+          "x": 1214.27,
+          "y": 23.85,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"a3234cfdc97eaed1e924\",\"layouts\":[{\"id\":0,\"position\":{\"x\":694.1830153120513,\"y\":372.55699425451013,\"z\":14000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Education\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Education\"},\"Name\":\"Human Resources.Education\",\"NativeReferenceName\":\"Education\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY EDUCATION'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 694.18,
+          "y": 372.56,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"b1d50154812035136054\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":148.57415810843085,\"z\":1000,\"width\":1896.6133269644138,\"height\":144.9056603773585,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 144.91,
+          "width": 1896.61,
+          "x": 14.67,
+          "y": 148.57,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b73e31b97c0d5cde8d50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.673990924289468,\"y\":0,\"z\":0,\"width\":1896.6133269644138,\"height\":128.39742058753285,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 128.40,
+          "width": 1896.61,
+          "x": 14.67,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bd75f16681d250690ab6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1062.0300931454503,\"y\":29.347981848578936,\"z\":21000,\"width\":148.57415810843085,\"height\":69.70145689037497,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"All Measures.MeasureSelected\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureSelected\"},\"Name\":\"All Measures.MeasureSelected\",\"NativeReferenceName\":\"MeasureSelected\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 69.70,
+          "width": 148.57,
+          "x": 1062.03,
+          "y": 29.35,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"be17fe79732c22383c23\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1041.943809292175,\"y\":658.4987868774348,\"z\":18000,\"width\":319.04051994170754,\"height\":251.11576408315048,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Human Resources.Years since last promition\",\"active\":true}],\"Y\":[{\"queryRef\":\"All Measures.MeasureLogic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Years since last promition\"},\"Name\":\"Human Resources.Years since last promition\",\"NativeReferenceName\":\"Years since last promition\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"},\"Name\":\"All Measures.MeasureLogic\",\"NativeReferenceName\":\"MeasureLogic\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MeasureLogic\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'BY LAST PROMOTION'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.12,
+          "width": 319.04,
+          "x": 1041.94,
+          "y": 658.50,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"d5c281e9855c411cb5ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.39337402341367,\"y\":161.48996877651575,\"z\":24000,\"width\":152.31611919797652,\"height\":118.01068694618002,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"AllMeasures.Total Employess\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Employess\"},\"Name\":\"AllMeasures.Total Employess\",\"NativeReferenceName\":\"Total Employess\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Employess\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 118.01,
+          "width": 152.32,
+          "x": 36.39,
+          "y": 161.49,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"fa7c9562e9a324cde700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1214.2727489849535,\"y\":176.00242580680043,\"z\":12000,\"width\":632.8158586099833,\"height\":104.55218533556246,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Human Resources.Business Unit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Human Resources\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Business Unit\"},\"Name\":\"Human Resources.Business Unit\",\"NativeReferenceName\":\"Business Unit\"}]},\"syncGroup\":{\"groupName\":\"Business Unit\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 104.55,
+          "width": 632.82,
+          "x": 1214.27,
+          "y": 176.00,
+          "z": 12000.00
+        }
+      ],
+      "width": 1920.00
+    }
+  ]
+}
