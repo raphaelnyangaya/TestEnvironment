@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-KE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Human Resources","LastRefreshDate","Query1","Date","All Measures","Metric","Avg Metric","Dimension Table"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
+
+ref table 'Human Resources'
+ref table DateTableTemplate_01966a66-04c8-4ff3-ad27-4cca0f670250
+ref table LastRefreshDate
+ref table LocalDateTable_cab66b06-09bc-4416-b400-ca263978bd62
+ref table Date
+ref table LocalDateTable_39fd9d09-44fd-477b-9ed4-d98f5fe8cc1b
+ref table LocalDateTable_ffa8f29b-b1d6-41be-9bcd-f01fc7802433
+ref table 'All Measures'
+ref table Metric
+ref table 'Avg Metric'
+ref table 'Dimension Table'
+
+ref cultureInfo en-US
+

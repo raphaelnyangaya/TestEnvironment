@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8516cb76b150b9544500",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"e6cab4f110e0bc98ad0b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":223.32309603505988,\"y\":74.91217778391248,\"z\":0,\"width\":299.64871113564993,\"height\":299.64871113564993}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"dimension_city.StateProvince\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_city\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"StateProvince\"},\"Name\":\"dimension_city.StateProvince\",\"NativeReferenceName\":\"StateProvince\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 299.65,
+          "width": 299.65,
+          "x": 223.32,
+          "y": 74.91,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

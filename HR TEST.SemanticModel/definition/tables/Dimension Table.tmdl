@@ -1,0 +1,46 @@
+table 'Dimension Table'
+	lineageTag: 55ba3999-a172-4f18-9c9c-8a51e06a14b6
+
+	column Id
+		dataType: string
+		lineageTag: 272e42f3-23f6-4d6b-ae49-d7f07cc7c869
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dimensions
+		dataType: string
+		lineageTag: 3f184779-140c-495c-b01d-898e925fa660
+		summarizeBy: none
+		sourceColumn: Dimensions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		lineageTag: 25ec1cc3-4033-4626-ac13-42ad9f36929d
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Dimension Table' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\raphael.nyangaya\Downloads\13+Adv+-+Human+Resources+dashboard+1\13 Adv - Human Resources dashboard 1\Human Resources.csv"),[Delimiter="|", Columns=22, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Departmets", type text}, {"Groups", type text}, {"Job Type", type text}, {"Marital Status", type text}, {"Age", Int64.Type}, {"Business Unit", type text}, {"Hire Date", type text}, {"Emp.Type", type text}, {"Sick Days", Int64.Type}, {"Balance Days", Int64.Type}, {"Years in current role", type text}, {"Years since last promition", type text}, {"Education", type text}, {"Job Involvement", type text}, {"Job Satisfaction", type text}, {"Performance Rating", type text}, {"Relationship Satisfaction", type text}, {"WorkLife Balance", type text}, {"Last Name", type text}, {"Gender", type text}, {"Salary", Int64.Type}, {"Job Classification", type text}}),
+				    #"Inserted Merged Column" = Table.AddColumn(#"Changed Type", "Merged", each Text.Combine({[Last Name], Text.From([Salary], "en-KE")}), type text),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Merged Column",{{"Merged", "Id"}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns",{"Departmets", "Job Type", "Marital Status", "Age", "Hire Date", "Sick Days", "Balance Days", "Years in current role", "Years since last promition", "Education", "Last Name", "Salary", "Emp.Type"}),
+				    #"Unpivoted Columns" = Table.UnpivotOtherColumns(#"Removed Columns", {"Id"}, "Attribute", "Value"),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Unpivoted Columns",{{"Attribute", "Dimensions"}})
+				in
+				    #"Renamed Columns1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

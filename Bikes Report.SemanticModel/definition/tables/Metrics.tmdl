@@ -1,0 +1,36 @@
+table Metrics
+	lineageTag: 9804592c-90f5-4296-9165-b564b8a54ec7
+
+	column Type
+		dataType: string
+		lineageTag: 9240b409-945e-4607-a2c9-d5231a99da72
+		summarizeBy: none
+		sourceColumn: Type
+		sortByColumn: 'Sort Order'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sort Order'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a1c4b43-75eb-4c40-95ff-f36b84e78972
+		summarizeBy: sum
+		sourceColumn: Sort Order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Metrics = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WCk7MSS1W0lEyVIrViVbyTSxKz8wDco3AXGd/92Agx1gpNhYA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Type = _t, #"Sort Order" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Type", type text}, {"Sort Order", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

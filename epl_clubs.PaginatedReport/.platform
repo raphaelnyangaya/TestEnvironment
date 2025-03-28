@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "PaginatedReport",
+    "displayName": "epl_clubs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5c5f8485-a76c-bb64-4ac5-37ca9f8ed933"
+  }
+}

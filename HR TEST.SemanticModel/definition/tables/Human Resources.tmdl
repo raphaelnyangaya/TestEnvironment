@@ -1,0 +1,207 @@
+table 'Human Resources'
+	lineageTag: 6334c09a-ba40-42bc-bb3b-f96fe5bd2d2b
+
+	column Departmets
+		dataType: string
+		lineageTag: ff61bf4a-5985-4012-94ea-7cda94a81ccb
+		summarizeBy: none
+		sourceColumn: Departmets
+
+		annotation SummarizationSetBy = Automatic
+
+	column Groups
+		dataType: string
+		lineageTag: 65eca004-01c7-43b1-961b-cd273bb0d693
+		summarizeBy: none
+		sourceColumn: Groups
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Type'
+		dataType: string
+		lineageTag: 346b370b-9d27-4f01-bf10-5fb6d1ef0e24
+		summarizeBy: none
+		sourceColumn: Job Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Marital Status'
+		dataType: string
+		lineageTag: 3b924416-645a-46ab-9637-85343b38f8e8
+		summarizeBy: none
+		sourceColumn: Marital Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 917ae3a4-8862-41af-aeb0-d64ec5b4eb1d
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Unit'
+		dataType: string
+		lineageTag: 3d65fc6a-6a99-4b24-a7f8-869de34b9bb9
+		summarizeBy: none
+		sourceColumn: Business Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hire Date'
+		dataType: string
+		lineageTag: 041c70a1-babd-44be-9f26-bea29d2a5b44
+		summarizeBy: none
+		sourceColumn: Hire Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Emp.Type'
+		dataType: string
+		lineageTag: 614853fe-2c86-48b1-96c2-23fbdd2cc870
+		summarizeBy: none
+		sourceColumn: Emp.Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sick Days'
+		dataType: int64
+		formatString: 0
+		lineageTag: 80bd7a47-aad9-4410-81bf-f94552252bd6
+		summarizeBy: sum
+		sourceColumn: Sick Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balance Days'
+		dataType: int64
+		formatString: 0
+		lineageTag: d494d837-2545-4172-a654-93d490484772
+		summarizeBy: sum
+		sourceColumn: Balance Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Years in current role'
+		dataType: string
+		lineageTag: e17e6b33-330c-48d7-9700-d3018aff4f6d
+		summarizeBy: none
+		sourceColumn: Years in current role
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Years since last promition'
+		dataType: string
+		lineageTag: d2338f92-3b39-496e-a542-6edf8c39177d
+		summarizeBy: none
+		sourceColumn: Years since last promition
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education
+		dataType: string
+		lineageTag: 3741e3ce-a071-4725-8834-08be181b7ad5
+		summarizeBy: none
+		sourceColumn: Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Involvement'
+		dataType: string
+		lineageTag: 1c01dc0a-0008-44bb-992d-f3e1664902e9
+		summarizeBy: none
+		sourceColumn: Job Involvement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Satisfaction'
+		dataType: string
+		lineageTag: 53f051b2-14a3-4495-b075-a760f49380d8
+		summarizeBy: none
+		sourceColumn: Job Satisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Performance Rating'
+		dataType: string
+		lineageTag: 97b643ca-101b-45b2-90d8-993b55591860
+		summarizeBy: none
+		sourceColumn: Performance Rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Relationship Satisfaction'
+		dataType: string
+		lineageTag: 4ad28b0c-4bca-48b8-97de-7ad2081a7833
+		summarizeBy: none
+		sourceColumn: Relationship Satisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'WorkLife Balance'
+		dataType: string
+		lineageTag: 0557bc5b-1e24-4675-98bf-77f05b893b17
+		summarizeBy: none
+		sourceColumn: WorkLife Balance
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: c1e281e7-7859-4775-b50d-498e9baa38fb
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 2f84f625-3a6e-4ffe-ac94-ea8dcc21fdff
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Salary
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d03e1fe-a35d-40b7-9db1-a6cfc486ffe3
+		summarizeBy: sum
+		sourceColumn: Salary
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Classification'
+		dataType: string
+		lineageTag: 23378605-5a10-4874-a40d-2a1ed215c88c
+		summarizeBy: none
+		sourceColumn: Job Classification
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id
+		dataType: string
+		lineageTag: 0f19b5c5-8035-4af1-a41e-8bff18e004d4
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Human Resources' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\raphael.nyangaya\Downloads\13+Adv+-+Human+Resources+dashboard+1\13 Adv - Human Resources dashboard 1\Human Resources.csv"),[Delimiter="|", Columns=22, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Departmets", type text}, {"Groups", type text}, {"Job Type", type text}, {"Marital Status", type text}, {"Age", Int64.Type}, {"Business Unit", type text}, {"Hire Date", type text}, {"Emp.Type", type text}, {"Sick Days", Int64.Type}, {"Balance Days", Int64.Type}, {"Years in current role", type text}, {"Years since last promition", type text}, {"Education", type text}, {"Job Involvement", type text}, {"Job Satisfaction", type text}, {"Performance Rating", type text}, {"Relationship Satisfaction", type text}, {"WorkLife Balance", type text}, {"Last Name", type text}, {"Gender", type text}, {"Salary", Int64.Type}, {"Job Classification", type text}}),
+				    #"Inserted Merged Column" = Table.AddColumn(#"Changed Type", "Merged", each Text.Combine({[Last Name], Text.From([Salary], "en-KE")}), type text),
+				    #"Renamed Columns" = Table.RenameColumns(#"Inserted Merged Column",{{"Merged", "Id"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

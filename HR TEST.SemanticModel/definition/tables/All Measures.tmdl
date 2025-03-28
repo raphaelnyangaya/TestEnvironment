@@ -1,0 +1,111 @@
+table 'All Measures'
+	lineageTag: f8a6f8fc-81c4-4dd3-ae78-6c6008f7e7df
+
+	measure 'Total Salary Cost' = SUM('Human Resources'[Salary])
+		formatString: 0
+		displayFolder: Salary\Total
+		lineageTag: 3867eca4-93c9-4691-97d2-c5ee99c8b8e8
+
+	measure 'Total Employess' = ```
+			COUNTROWS('Human Resources')
+			
+			```
+		formatString: 0
+		displayFolder: Employees
+		lineageTag: 771cac30-18d6-41b0-b99b-a8cb64ce0716
+
+	measure 'Total Active Employees' = ```
+			CALCULATE([Total Employess],'Human Resources'[Emp.Type]="Active")
+			
+			```
+		formatString: 0
+		displayFolder: Employees
+		lineageTag: 32788b4e-3374-4c2e-abc8-72b51f40342a
+
+	measure 'Total Sick Days' = ```
+			sum('Human Resources'[Sick Days])
+			
+			```
+		formatString: 0
+		displayFolder: Sick Days\Total
+		lineageTag: 9ba5fa22-3c1b-4f88-b209-0170cf1addb1
+
+	measure 'Total Balance Days' = ```
+			SUM('Human Resources'[Balance Days])
+			
+			```
+		formatString: 0
+		displayFolder: Balance days\Total
+		lineageTag: 60d9c8bd-f7f4-48c3-827e-ba73f8216513
+
+	measure 'Average Salary' = ```
+			AVERAGE('Human Resources'[Salary])
+			
+			```
+		displayFolder: Salary\avg
+		lineageTag: 790f1ce3-8211-4615-b96a-ded215ae4607
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Sick Days' = ```
+			AVERAGE('Human Resources'[Sick Days])
+			
+			```
+		displayFolder: Sick Days\Avg
+		lineageTag: bd6104ed-322c-4633-90dc-24acba935387
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Balance Days' = ```
+			AVERAGE('Human Resources'[Balance Days])
+			
+			```
+		displayFolder: Balance days\Avg
+		lineageTag: 0b73dcc1-ebec-4655-8b5d-d996fa9b917b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MeasureSelected = SELECTEDVALUE(Metric[Type],"Salary")
+		displayFolder: LogicFilter\Metric
+		lineageTag: c7f03dce-bbd0-497e-a1b3-dffca2d55cf3
+
+	measure MeasureLogic =
+			
+			SWITCH(TRUE(),
+			'All Measures'[MeasureSelected]="Salary",[Total Salary Cost],
+			'All Measures'[MeasureSelected]="Employees",[Total Employess],
+			[Total Salary Cost])
+		formatString: 0
+		displayFolder: LogicFilter\Metric
+		lineageTag: e7dc4a6d-6c24-483b-b6b8-fc6d2eb76a16
+
+	measure AvgMeasureSelected = SELECTEDVALUE('Avg Metric'[Type],"Avg Salary")
+		displayFolder: LogicFilter\AvgMetric
+		lineageTag: 1389d5cd-d1c5-4686-8ba9-ac930e77971b
+
+	measure AvgMeasureLogic =
+			
+			SWITCH(TRUE(),
+			'All Measures'[AvgMeasureSelected]="Avg Salary",[Average Salary],
+			'All Measures'[AvgMeasureSelected]="Avg Balance Days",[Average Balance Days],
+			'All Measures'[AvgMeasureSelected]="Avg Sick Days",[Average Sick Days],
+			[Average Salary])
+		displayFolder: LogicFilter\AvgMetric
+		lineageTag: 5e42c40d-96e1-415d-b248-d7060c3005c8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'All Measures' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

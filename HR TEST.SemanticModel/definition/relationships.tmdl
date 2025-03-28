@@ -1,0 +1,24 @@
+relationship 7cedb07a-70ef-48cc-a09b-df0ceb52f5d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: LastRefreshDate.LastRefresh
+	toColumn: LocalDateTable_cab66b06-09bc-4416-b400-ca263978bd62.Date
+
+relationship 149743c7-d84f-4d96-b6bf-71ba9ddd3c1a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Date
+	toColumn: LocalDateTable_39fd9d09-44fd-477b-9ed4-d98f5fe8cc1b.Date
+
+relationship 28b1a70f-e30e-48b5-9b0a-3319cd4fb7c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.WeekEnding
+	toColumn: LocalDateTable_ffa8f29b-b1d6-41be-9bcd-f01fc7802433.Date
+
+relationship c107235d-9333-657d-dd32-2256b078277f
+	fromColumn: 'Human Resources'.'Hire Date'
+	toColumn: Date.Date
+
+relationship 836dd206-a580-042c-779f-eddade717a59
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Dimension Table'.Id
+	toColumn: 'Human Resources'.Id
+

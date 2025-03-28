@@ -1,0 +1,34 @@
+table 'Avg Metric'
+	lineageTag: e5bd04f2-e645-4c26-ad59-95aa5aeefdba
+
+	column Type
+		dataType: string
+		lineageTag: f776d460-e59a-481d-91a7-11a2f94050b6
+		summarizeBy: none
+		sourceColumn: Type
+		sortByColumn: 'Sort Order'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sort Order'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a6db7bf-4e85-4d99-bd3c-ae2edd894598
+		summarizeBy: sum
+		sourceColumn: Sort Order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Avg Metric' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WcixLVwhOzEksqlTSUTJUitWBCDkBhfKSUxVcEiuLgRJGcIngzORsmKixUmwsAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Type = _t, #"Sort Order" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Type", type text}, {"Sort Order", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
