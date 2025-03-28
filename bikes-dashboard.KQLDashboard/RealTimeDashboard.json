@@ -1,0 +1,323 @@
+{
+  "schema_version": "61",
+  "autoRefresh": {
+    "enabled": true,
+    "defaultInterval": "30m"
+  },
+  "tiles": [
+    {
+      "id": "1ee80be9-6e2a-4222-b383-fc89e6be803f",
+      "title": "Bikes and Docks",
+      "visualType": "stackedbar",
+      "pageId": "254a6787-d7e6-46da-95c9-8c7b17094c1d",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 10,
+        "height": 11
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "4b7ebd70-cbfb-44b0-a7f7-09d944bb2e9b"
+      },
+      "visualOptions": {
+        "multipleYAxes": {
+          "base": {
+            "id": "-1",
+            "label": "",
+            "columns": [],
+            "yAxisMaximumValue": null,
+            "yAxisMinimumValue": null,
+            "yAxisScale": "linear",
+            "horizontalLines": []
+          },
+          "additional": [],
+          "showMultiplePanels": false
+        },
+        "hideLegend": false,
+        "legendLocation": "bottom",
+        "xColumnTitle": "",
+        "xColumn": null,
+        "yColumns": [
+          "No_Bikes",
+          "No_Empty_Docks"
+        ],
+        "seriesColumns": null,
+        "xAxisScale": "linear",
+        "verticalLine": "",
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "crossFilter": [],
+        "drillthrough": [],
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        },
+        "dataPointsTooltip": {
+          "all": false,
+          "limit": 1
+        }
+      }
+    },
+    {
+      "id": "8400600e-5524-4d9c-a819-a3055b20e6b6",
+      "title": "Bike Locations",
+      "visualType": "map",
+      "pageId": "254a6787-d7e6-46da-95c9-8c7b17094c1d",
+      "layout": {
+        "x": 10,
+        "y": 0,
+        "width": 14,
+        "height": 11
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0c12225d-fbcf-461f-a6ce-3d9b57d3a9c0"
+      },
+      "visualOptions": {
+        "map__type": "bubble",
+        "map__latitudeColumn": "Latitude",
+        "map__longitudeColumn": "Longitude",
+        "map__labelColumn": "Neighbourhood",
+        "map__sizeColumn": null,
+        "map__sizeDisabled": false,
+        "map__geoType": "numeric",
+        "map__geoPointColumn": null,
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        },
+        "dataPointsTooltip": {
+          "all": false,
+          "limit": 1
+        }
+      }
+    },
+    {
+      "id": "ae8d990e-e047-4111-b3f3-4bdc504844d6",
+      "title": "New tile",
+      "visualType": "table",
+      "pageId": "f72e0147-4f3b-427a-8803-864c9f0f678a",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 9,
+        "height": 12
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "5a3761cb-78f2-4296-9c1e-d98859f00eea"
+      },
+      "visualOptions": {
+        "table__enableRenderLinks": true,
+        "colorRulesDisabled": true,
+        "colorStyle": "light",
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "crossFilter": [],
+        "drillthrough": [],
+        "table__renderLinks": [],
+        "colorRules": [],
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        },
+        "dataPointsTooltip": {
+          "all": false,
+          "limit": 1
+        }
+      }
+    },
+    {
+      "id": "a3cc5099-30f7-4707-b0d2-e3519e0f17ec",
+      "title": "West End",
+      "visualType": "table",
+      "pageId": "254a6787-d7e6-46da-95c9-8c7b17094c1d",
+      "layout": {
+        "width": 9,
+        "height": 7,
+        "x": 0,
+        "y": 11
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ff8d36cc-d12d-43b9-a79d-adf08119a1ee"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "09159825-82e1-4057-b5d8-8c585278eb2c",
+      "title": "West End",
+      "visualType": "table",
+      "pageId": "254a6787-d7e6-46da-95c9-8c7b17094c1d",
+      "layout": {
+        "width": 9,
+        "height": 7,
+        "x": 9,
+        "y": 11
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "56200bb4-5aa9-4973-b32c-1ac9d699ed58"
+      },
+      "visualOptions": {
+        "table__enableRenderLinks": true,
+        "colorRulesDisabled": true,
+        "colorStyle": "light",
+        "crossFilter": [],
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "drillthrough": [],
+        "table__renderLinks": [],
+        "colorRules": []
+      }
+    }
+  ],
+  "baseQueries": [
+    {
+      "id": "54f08140-4b59-4052-b238-82d64d41f01c",
+      "queryId": "5230e7af-025d-4d1d-befb-a8f9b33866bc",
+      "variableName": "base_bike_data"
+    }
+  ],
+  "parameters": [
+    {
+      "kind": "string",
+      "id": "55bd9d6a-3fb2-476f-a087-9bd9a725b444",
+      "displayName": "Neighbourhood",
+      "description": "Choose neighbourhoods",
+      "variableName": "selected_neighbourhoods",
+      "selectionType": "array",
+      "includeAllOption": true,
+      "defaultValue": {
+        "kind": "all"
+      },
+      "dataSource": {
+        "kind": "query",
+        "columns": {
+          "value": "Neighbourhood"
+        },
+        "queryRef": {
+          "kind": "query",
+          "queryId": "1d5a55a4-e9c8-4dfd-891e-a34b1a930bc5"
+        },
+        "autoReset": true
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "kind": "kusto-trident",
+      "scopeId": "kusto-trident",
+      "clusterUri": "",
+      "database": "783a5cba-190d-a043-4da8-dd1cc9fe3bd6",
+      "name": "Bike Rental Data",
+      "id": "518e525d-0707-4bd9-a725-46e5131db165",
+      "workspace": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "kind": "kusto-trident",
+      "scopeId": "kusto-trident",
+      "clusterUri": "",
+      "database": "783a5cba-190d-a043-4da8-dd1cc9fe3bd6",
+      "name": "FEBEVENTHOUSE",
+      "workspace": "00000000-0000-0000-0000-000000000000",
+      "id": "4f2f7c69-5c13-4080-8c7a-4bb5e0c1971b"
+    },
+    {
+      "kind": "kusto-trident",
+      "scopeId": "kusto-trident",
+      "clusterUri": "https://trd-ktvdhje3sszzwvvfg7.z7.kusto.fabric.microsoft.com/",
+      "database": "e042ad32-b32c-4069-bee4-18929b0cfae1",
+      "name": "DP700A",
+      "workspace": "17865aab-61cf-48c0-aec0-4320f4200b00",
+      "id": "ff2ac8bc-fb6f-485b-8cd4-d9db59f04174"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "254a6787-d7e6-46da-95c9-8c7b17094c1d"
+    },
+    {
+      "name": "Page 2",
+      "id": "f72e0147-4f3b-427a-8803-864c9f0f678a"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "518e525d-0707-4bd9-a725-46e5131db165"
+      },
+      "text": "// Please enter your KQL query (Example):\n// <table name>\n// | where <datetime column> between (['_startTime'] .. ['_endTime']) // Time range filtering\n// | take 100\n  base_bike_data\n | project Neighbourhood, latest_observation, No_Bikes, No_Empty_Docks\n | order by Neighbourhood asc",
+      "id": "4b7ebd70-cbfb-44b0-a7f7-09d944bb2e9b",
+      "usedVariables": [
+        "base_bike_data"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "518e525d-0707-4bd9-a725-46e5131db165"
+      },
+      "text": "// Please enter your KQL query (Example):\n// <table name>\n// | where <datetime column> between (['_startTime'] .. ['_endTime']) // Time range filtering\n// | take 100\n base_bike_data\n | project Neighbourhood, latest_observation, No_Bikes, Latitude, Longitude\n | order by Neighbourhood asc",
+      "id": "0c12225d-fbcf-461f-a6ce-3d9b57d3a9c0",
+      "usedVariables": [
+        "base_bike_data"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "518e525d-0707-4bd9-a725-46e5131db165"
+      },
+      "text": "// Please enter your KQL query (Example):\n// <table name>\n// | where isempty(['selected_neighbourhoods']) or <column name> in (['selected_neighbourhoods']) // Multiple selection filtering\n// | take 100\n base_bike_data\n | project Neighbourhood, latest_observation\n | order by latest_observation desc",
+      "id": "5a3761cb-78f2-4296-9c1e-d98859f00eea",
+      "usedVariables": [
+        "base_bike_data"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "4f2f7c69-5c13-4080-8c7a-4bb5e0c1971b"
+      },
+      "text": "bikes\r\n| where (Neighbourhood == \"West End\")\r\n| where (No_Bikes >=10)\r\n| project BikepointID, Street, Neighbourhood, Latitude, Longitude, No_Bikes, No_Empty_Docks",
+      "id": "ff8d36cc-d12d-43b9-a79d-adf08119a1ee",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "ff2ac8bc-fb6f-485b-8cd4-d9db59f04174"
+      },
+      "text": "//See how many records are in the table.\nDP700F\n|where SUM_No_Bikes >50\n\n",
+      "id": "56200bb4-5aa9-4973-b32c-1ac9d699ed58",
+      "usedVariables": []
+    },
+    {
+      "id": "5230e7af-025d-4d1d-befb-a8f9b33866bc",
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "518e525d-0707-4bd9-a725-46e5131db165"
+      },
+      "text": "// Please enter your KQL query (Example):\n// <table name>\n// | where <datetime column> between (['_startTime'] .. ['_endTime']) // Time range filtering\n// | take 100\n  bikes\n     | where ingestion_time() between (ago(30min) .. now())\n       and (isempty(['selected_neighbourhoods']) or Neighbourhood  in (['selected_neighbourhoods']))\n     | summarize latest_observation = arg_max(ingestion_time(), *) by Neighbourhood",
+      "usedVariables": [
+        "selected_neighbourhoods"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "518e525d-0707-4bd9-a725-46e5131db165"
+      },
+      "text": "// Please enter your KQL query (Example):\n// <table name>\n// | take 100\n  bikes\n  | distinct Neighbourhood\n  | order by Neighbourhood asc",
+      "id": "1d5a55a4-e9c8-4dfd-891e-a34b1a930bc5",
+      "usedVariables": []
+    }
+  ]
+}

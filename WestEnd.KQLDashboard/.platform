@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDashboard",
+    "displayName": "WestEnd",
+    "description": "WestEnd"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eeacc847-5bc0-978a-4072-9fdd99f3c115"
+  }
+}
