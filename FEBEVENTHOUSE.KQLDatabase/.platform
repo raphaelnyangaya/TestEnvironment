@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "FEBEVENTHOUSE",
+    "description": "FEBEVENTHOUSE"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "783a5cba-190d-a043-4da8-dd1cc9fe3bd6"
+  }
+}
