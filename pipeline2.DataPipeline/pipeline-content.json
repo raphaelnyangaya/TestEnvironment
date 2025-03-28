@@ -1,0 +1,371 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "fact_sale"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "HR_DATA",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "3b7fafe9-5b43-93d9-4b52-0dbde35aec3d",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "DataWarehouseSink",
+            "tableOption": "autoCreate",
+            "allowCopyCommand": true,
+            "copyCommandSettings": {},
+            "datasetSettings": {
+              "type": "DataWarehouseTable",
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "fact_sale"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "RAPHAEL",
+                "properties": {
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "artifactId": "ccaa919a-3c18-429c-b838-841c22d2d644",
+                    "endpoint": "wli4raca37qetgaoevvarldfgm-vnnimf6pmhaerlwaimqpiialaa.datawarehouse.fabric.microsoft.com",
+                    "workspaceId": "17865aab-61cf-48c0-aec0-4320f4200b00"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "SaleKey",
+                  "type": "Int64",
+                  "physicalType": "long"
+                },
+                "sink": {
+                  "name": "SaleKey",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "CityKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "CityKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "CustomerKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "CustomerKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "BillToCustomerKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "BillToCustomerKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "StockItemKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "StockItemKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "InvoiceDateKey",
+                  "type": "DateTime",
+                  "physicalType": "timestamp"
+                },
+                "sink": {
+                  "name": "InvoiceDateKey",
+                  "physicalType": "datetime2",
+                  "precision": 6
+                }
+              },
+              {
+                "source": {
+                  "name": "DeliveryDateKey",
+                  "type": "DateTime",
+                  "physicalType": "timestamp"
+                },
+                "sink": {
+                  "name": "DeliveryDateKey",
+                  "physicalType": "datetime2",
+                  "precision": 6
+                }
+              },
+              {
+                "source": {
+                  "name": "SalespersonKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "SalespersonKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "WWIInvoiceID",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "WWIInvoiceID",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "Description",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "Description",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "Package",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "Package",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "Quantity",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "Quantity",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "UnitPrice",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "UnitPrice",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "TaxRate",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 3,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "TaxRate",
+                  "physicalType": "decimal",
+                  "scale": 3,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "TotalExcludingTax",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "TotalExcludingTax",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "TaxAmount",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "TaxAmount",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "Profit",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "Profit",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "TotalIncludingTax",
+                  "type": "Decimal",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                },
+                "sink": {
+                  "name": "TotalIncludingTax",
+                  "physicalType": "decimal",
+                  "scale": 2,
+                  "precision": 18
+                }
+              },
+              {
+                "source": {
+                  "name": "TotalDryItems",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "TotalDryItems",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "TotalChillerItems",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "TotalChillerItems",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "LineageKey",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "LineageKey",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "Month",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "Month",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "Year",
+                  "type": "Int32"
+                },
+                "sink": {
+                  "name": "Year",
+                  "physicalType": "int"
+                }
+              },
+              {
+                "source": {
+                  "name": "Quarter",
+                  "type": "Int32"
+                },
+                "sink": {
+                  "name": "Quarter",
+                  "physicalType": "int"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": true
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy data1",
+        "dependsOn": []
+      }
+    ]
+  }
+}

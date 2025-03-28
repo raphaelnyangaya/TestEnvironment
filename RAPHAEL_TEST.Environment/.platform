@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Environment",
+    "displayName": "RAPHAEL_TEST",
+    "description": "Environment"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "94288584-e30f-8031-435f-1c8ea37ee695"
+  }
+}
