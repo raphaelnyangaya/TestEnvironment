@@ -44,3 +44,38 @@ display(df)
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# CELL ********************
+
+df.write.format("delta").mode("overwrite").saveAsTable("BIG_DATA.dbo.dimension_city_2_delta")
+
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+df1 = spark.sql("SELECT CityKey,City,LatestRecordedPopulation FROM BIG_DATA.dbo.dimension_city_2_delta LIMIT 1000")
+display(df1)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+df1.write.format("delta").mode("overwrite").saveAsTable("BIG_DATA.dbo.Dim2_City")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }

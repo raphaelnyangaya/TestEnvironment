@@ -13,6 +13,118 @@
     "sourceQueryCulture": "en-US",
     "tables": [
       {
+        "name": "DP700F",
+        "sourceLineageTag": "[dbo].[DP700F]",
+        "columns": [
+          {
+            "name": "Neighbourhood",
+            "dataType": "string",
+            "sourceColumn": "Neighbourhood",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Neighbourhood",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SUM_No_Bikes",
+            "dataType": "double",
+            "sourceColumn": "SUM_No_Bikes",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "SUM_No_Bikes",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "DP700F",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "DP700F-Clone",
+        "sourceLineageTag": "[dbo].[DP700F-Clone]",
+        "columns": [
+          {
+            "name": "Neighbourhood",
+            "dataType": "string",
+            "sourceColumn": "Neighbourhood",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Neighbourhood",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SUM_No_Bikes",
+            "dataType": "double",
+            "sourceColumn": "SUM_No_Bikes",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "SUM_No_Bikes",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "DP700F-Clone",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
         "name": "orders",
         "sourceLineageTag": "[dbo].[orders]",
         "columns": [
