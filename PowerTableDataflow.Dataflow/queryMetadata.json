@@ -1,0 +1,147 @@
+{
+  "formatVersion": "202409",
+  "lastModified": null,
+  "editingSession": {
+    "computeEngineSettings": {},
+    "editingSessionMashup": {
+      "mashupName": "PowerTableDataflow",
+      "queryGroups": [],
+      "documentLocale": "en-US",
+      "queriesMetadata": {
+        "DP700D": {
+          "queryId": "6859509f-9c33-4908-96e8-c753a6740784",
+          "queryName": "DP700D",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "DP700F": {
+          "queryId": "5b3c36e7-fd1d-497a-a567-5399212582b0",
+          "queryName": "DP700F",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": true,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "DP700D_DataDestination": {
+          "queryId": "8fd91725-be97-41e3-80e7-c7016eca4521",
+          "queryName": "DP700D_DataDestination",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": true,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "DP700F_DataDestination": {
+          "queryId": "22c48651-7126-4fe9-9933-6dcfaa1146e8",
+          "queryName": "DP700F_DataDestination",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": true,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        }
+      },
+      "connectionOverrides": [
+        {
+          "path": "https://trd-p4qy47mkt566r15jhc.z6.kusto.fabric.microsoft.com",
+          "kind": "AzureDataExplorer",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"1ee72fb4-60a2-4b53-b66c-84345aa29684\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        },
+        {
+          "path": "https://trd-ktvdhje3sszzwvvfg7.z7.kusto.fabric.microsoft.com",
+          "kind": "AzureDataExplorer",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"594f2109-467c-4380-b9f8-2443cb638bc9\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        },
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"83d554df-6720-4d8d-bce0-7cc48df52c4e\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"657474a0-5684-4173-ac91-88ebfa46fd71\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        }
+      ],
+      "trustedConnections": [
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"83d554df-6720-4d8d-bce0-7cc48df52c4e\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"0e006d3d-54a0-4acf-807c-16d7d25ff1d7\",\"DatasourceId\":\"657474a0-5684-4173-ac91-88ebfa46fd71\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        }
+      ],
+      "useHostConnectionProvider": false,
+      "fastCombine": false,
+      "allowNativeQueries": true,
+      "skipAutomaticTypeAndHeaderDetection": false,
+      "hostProperties": {
+        "dataflowRefreshOutputFileFormat": "Parquet",
+        "enableDateTimeFieldsForStaging": "true",
+        "enablePublishWithoutLoadedQueries": "true"
+      }
+    }
+  }
+}
