@@ -1,0 +1,22 @@
+{
+  "formatVersion": "202409",
+  "lastModified": null,
+  "editingSession": {
+    "computeEngineSettings": {
+      "allowFastCopy": true
+    },
+    "editingSessionMashup": {
+      "mashupName": "",
+      "queryGroups": [],
+      "documentLocale": "en-US",
+      "connectionOverrides": [],
+      "fastCombine": false,
+      "allowNativeQueries": true,
+      "hostProperties": {
+        "dataflowRefreshOutputFileFormat": "Parquet",
+        "enableDateTimeFieldsForStaging": "true",
+        "enablePublishWithoutLoadedQueries": "true"
+      }
+    }
+  }
+}

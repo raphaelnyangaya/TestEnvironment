@@ -11,9 +11,9 @@ annotation PBI_QueryOrder = ["financials","All Measures","Metrics"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.139.7496.1 (Main)+061188de2d27b556d0c15d8f70c4426f68783390
+annotation PBIDesktopVersion = 2.142.7627.7 (Main)+410583e6612ac17a9d9d58f3dce791f7cd48f7b4
 
-annotation PBI_ProTooling = ["WebModelingEdit","CalcGroup"]
+annotation PBI_ProTooling = ["WebModelingEdit","CalcGroup","DaxQueryView_Desktop"]
 
 ref table financials
 ref table DateTableTemplate_246b6859-ed1c-474b-974f-4bfedc916260
