@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Warehouse",
-    "displayName": "TestWH"
+    "type": "Lakehouse",
+    "displayName": "RDS_Retail_Solution1_LH_silver"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "51c7df39-44b2-b985-4326-56ec3892e394"
+    "logicalId": "add98460-166f-a650-4389-02ef104bbd2e"
   }
 }

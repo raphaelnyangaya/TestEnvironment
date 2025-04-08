@@ -9,4 +9,3 @@ CREATE TABLE [dbo].[orders] (
 	[LineItemTotal] float NULL, 
 	[MonthNo] bigint NULL
 );
-
