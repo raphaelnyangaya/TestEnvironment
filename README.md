@@ -1,2 +1,2 @@
 # TestEnvironment
-This workspace is used  for testing items 
+This workspace is used  for testing fabric workloads and items 
