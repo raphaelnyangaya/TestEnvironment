@@ -1,11 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "CopyJob",
-    "displayName": "DianaTest"
+    "type": "Notebook",
+    "displayName": "Notebook 2",
+    "description": "New notebook"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "c5e02ec8-5000-96d0-4ff0-8c9fac1b25e4"
+    "logicalId": "c5edcf1b-1617-a138-4474-a864fc38bfb1"
   }
 }

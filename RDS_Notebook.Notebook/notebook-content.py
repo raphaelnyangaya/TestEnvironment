@@ -48,7 +48,17 @@ display(df)
 
 # CELL ********************
 
-delta_table_path = "abfss://17865aab-61cf-48c0-aec0-4320f4200b00@onelake.dfs.fabric.microsoft.com/104bbd2e-02ef-4389-a650-166fadd98460/Tables/AttendanceStatus" #fill in your delta table path 
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+delta_table_path = "abfss://17865aab-61cf-48c0-aec0-4320f4200b00@onelake.dfs.fabric.microsoft.com/104bbd2e-02ef-4389-a650-166fadd98460/Tables/AttendanceStatus" 
 df.write.format("delta").mode("overwrite").option("mergeSchema", "true").save(delta_table_path)
 
 # METADATA ********************
@@ -60,6 +70,8 @@ df.write.format("delta").mode("overwrite").option("mergeSchema", "true").save(de
 
 # CELL ********************
 
+df = spark.sql("SELECT * FROM AttendanceStatus LIMIT 1000")
+display(df)
 
 # METADATA ********************
 
@@ -70,7 +82,47 @@ df.write.format("delta").mode("overwrite").option("mergeSchema", "true").save(de
 
 # CELL ********************
 
-df = spark.sql("SELECT * FROM AttendanceStatus LIMIT 1000")
+df = spark.read.table("AttendanceStatus")
+
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+from pyspark.sql.functions import lit
+
+# Example: add a column with default value
+df_new = df.withColumn("CreatedDate", lit("default_value"))
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+df_new.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("AttendanceStatus")
+
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+df = spark.sql("""SELECT * FROM AttendanceStatus
+where CreatedDate=(select max(CreatedDate) from AttendanceStatus)
+""")
 display(df)
 
 # METADATA ********************

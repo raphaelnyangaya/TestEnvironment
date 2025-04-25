@@ -1,6 +1,59 @@
 {
   "properties": {
-    "jobMode": "Batch"
+    "jobMode": "Batch",
+    "source": {
+      "type": "LakehouseTable",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "add98460-166f-a650-4389-02ef104bbd2e",
+          "rootFolder": "Tables"
+        }
+      }
+    },
+    "destination": {
+      "type": "DataWarehouseTable",
+      "connectionSettings": {
+        "type": "DataWarehouse",
+        "typeProperties": {
+          "workspaceId": "2eeb9d42-3d32-4c54-a6ce-0cf5107eb2de",
+          "artifactId": "fbee32cc-521d-4b71-8dae-8028cc4df560",
+          "endPoint": "wli4raca37qetgaoevvarldfgm-iko6wlrshvkezjwobt2ra7vs3y.datawarehouse.fabric.microsoft.com"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00"
+    }
   },
-  "activities": []
+  "activities": [
+    {
+      "id": "65ff3153-2b30-4506-b284-e787eeab6e1d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "AttendanceStatus"
+          }
+        },
+        "destination": {
+          "tableOption": "autoCreate",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "AttendanceStatus"
+          }
+        },
+        "enableStaging": true,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
 }
